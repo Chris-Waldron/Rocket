@@ -19,6 +19,13 @@
         transform-origin: center;
         transform: translate(0px, 0px) rotate(0rad);
       }
+
+      .llama {
+        width: 100px;
+        position: absolute;
+        transform-origin: center;
+        transform: translate(0px, 0px) rotate(0rad);
+      }
   
       .stars {
         position: absolute;
@@ -57,12 +64,13 @@
     <div class="bg"></div>
     <div class="stars"></div>
     <img src="./Llama.jpg" class="rocket">
+    <img src="./Llama.jpg" class="llama">
   
-    <script>
+    <script type="module">
       const rocket = document.querySelector(".rocket");
 
-      const acceleration = 789;
-      const maximumSpeed = 483;
+      const acceleration = 100000;
+      const maximumSpeed = 100000000;
       const offset = 45 * Math.PI / 180;
 
       // rocket position (in pixels)
@@ -134,6 +142,8 @@
             t2 => animate(t0, t1, t2))))      
 
     </script>
+
+
   </body>
 
 
